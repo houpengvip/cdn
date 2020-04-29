@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  /* 设置成 css3 盒子模型, padding和border会自动内减 */
+  box-sizing: border-box;
+}
+
+
+/*去除边框*/
+fieldset,
+img,
+input,
+button,
+textarea {
+  border: none;
+  /*去除的蓝色小边框*/
+  outline-style: none;
+}
+
+/*禁止表单域缩放*/
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: #969696;
+  /* 取消链接高亮  */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* 图片自适应 */
+img {
+  width: 100%;
+  /* 解决图片底部对其问题*/
+  /* 转成块级之后的元素, 对 vertical-align 属性 无感 */
+  border: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+/* 废物利用 */
+em,
+i {
+  font-style: normal;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*单行溢出*/
+.one-txt-cut {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*多行溢出*/
+.txt-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+
+.jd_sprite {
+  background: url("../images/jd-sprites.png") 0 0;
+  /* 希望二倍图, 变成一半的大小来显示 */
+  background-size: 200px 200px;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 0, 0, 0.4);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'SourceHanSansCN-Regular';
+  color: #a9afff;
+}
+
+/*加载数据弹层*/
+.load-container {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.load-container:before {
+  content: '加载中';
+  display: block;
+  position: absolute;
+  bottom: 103px;
+  font-size: 14px;
+  line-height: 200%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.load1 .loader {
+  border-radius: 50%;
+  font-size: 12px !important;
+  width: 6em;
+  height: 6em;
+  margin: 7em auto;
+  position: relative;
+  text-indent: -9999em;
+  border: 0.2em solid #303233;
+  border-left: 0.2em solid #e3e3e3;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  animation: load 0.85s infinite linear;
+  -o-animation: load 0.85s infinite linear;
+  -webkit-animation: load 0.85s infinite linear;
+  -moz-animation: load 0.85s infinite linear;
+}
+
+@-ms-keyframes load {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg)
+  }
+}
+
+@-moz-keyframes load {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg)
+  }
+}
+
+@-webkit-keyframes load {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg)
+  }
+}
+
+@-o-keyframes load {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg)
+  }
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg)
+  }
+}
+
+#mask {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* filter: alpha(opacity=30);
+  background-color: #777;
+  z-index: 0;
+  left: 0px;
+  opacity: 0.3;
+  -moz-opacity: 0.3; */
+}
+
+/* 屏幕自适应 */
+@media (min-width: 1024px) {
+  html {
+    font-size: 10.24px;
+  }
+}
+
+@media (min-width: 1100px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 12.80px;
+  }
+}
+
+@media (min-width: 1366px) {
+  html {
+    font-size: 13.66px;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 14.4px;
+  }
+}
+
+@media (min-width: 1680px) {
+  html {
+    font-size: 16.8px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 19.2px;
+  }
+}

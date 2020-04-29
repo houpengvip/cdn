@@ -1,0 +1,313 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'SourceHanSansCN-Regular';
+}
+
+
+.w1920 {
+  width: 100%;
+  margin: 0 auto;
+  height: 62.5rem;
+  background: url('../../img/dashboard/background.png') no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+/* 头部 */
+.top {
+  height: 5.9375rem;
+  width: 100rem;
+  background: url('../../img/dashboard/top.png') no-repeat;
+  background-size: contain;
+  color: #abbcf0;
+  font-size: 1.25rem;
+  overflow: hidden;
+  position: relative;
+}
+.top .weather {
+  width: 16.667rem;
+  height: 1.823rem;
+  line-height: 1.823rem;
+  margin-top: 0.5208rem;
+}
+.top img {
+  width: 3.3854rem;
+  height: 3.3854rem;
+  position: absolute;
+  top: 1.25rem;
+  left:1.0417rem;
+}
+.top .username {
+  font-size: 1.5625rem;
+  position: absolute;
+  top: 1.8229rem;
+  left:5.46875rem;
+}
+.top .right{
+  position: absolute;
+  top: 1.14583rem;
+  right: 5.20833rem;
+}
+.top .logo {
+  width: 28.17708rem;
+  height: 3.90625rem;
+  background: url('../../img/dashboard/darang.png') no-repeat;
+  background-size: contain;
+  margin:0 auto;
+  margin-top: 0.9375rem;
+}
+
+.top .loginout {
+  color: #ffffff;
+  font-size: 0.9375rem;
+  position: absolute;
+  width: 5.625rem;
+  height: 2.08333rem;
+  text-align: center;
+  line-height: 2.08333rem;
+  top:1.875rem;
+  right: 1.0417rem;
+  background-color: #0c81fe;
+  border-radius: 1.0417rem;
+  cursor: pointer;
+}
+
+
+/* 主体部分 */
+.mask{
+	display:none;
+}
+.main {
+  padding: 0.83333rem;
+  height: 50.3125rem;
+  position: relative;
+}
+.main .title {
+  color: #abbcf0;
+  font-size: 1.14583rem;
+  margin-top: 0.83333rem;
+  margin-left: 0.9375rem;
+  position: relative;
+}
+.main .tab1 {
+  width: 31.770833rem;
+  height: 24.11458rem;
+  background: url('../../img/dashboard/background_one.png') no-repeat;
+  background-size: contain;
+  display: inline-block;
+  overflow: hidden;
+}
+.main .tab1.pr {
+  position: absolute;
+  left:67.36rem;
+  top:0.833333rem;
+}
+.main .tab2 {
+  width: 33.90625rem;
+  height: 12.34375rem;
+  background: url('../../img/dashboard/background_two.png') no-repeat;
+  background-size: contain;
+  margin-left: 0.35rem;
+}
+.main .tab3 {
+  width: 16.6667rem;
+  height: 17.08333rem;
+  background: url('../../img/dashboard/background_three.png') no-repeat;
+  background-size: contain;
+  margin-left: 0.46875rem;
+  margin-top: 0.416667rem;
+}
+.main .tab3.pl1 {
+  position: absolute;
+  top: 13.26rem;
+  left:32.56rem;
+}
+.main .tab3.pl2 {
+  position: absolute;
+  top: 13.26rem;
+  left:49.7rem;
+}
+.main .tab4 {
+  width: 33.85412rem;
+  height: 18.3333rem;
+  background: url('../../img/dashboard/background_four.png') no-repeat;
+  background-size: contain;
+  left: 33.02083rem;
+  overflow: hidden;
+}
+.pb{
+  position: absolute;
+  bottom: 0.833333rem;
+  left: 0.833333rem;
+}
+.pb1 {
+  position: absolute;
+  bottom: 0.833333rem;
+  left: 67.36rem;
+}
+.main #charts1, #charts2 {
+  width: 30.72917rem;
+  height:22.65625rem;
+  margin: -1.5625rem auto;
+}
+.main #charts1 canvas{
+  width: 30.72917rem !important;
+  height: 22.65625rem !important;
+}
+.main #charts2 canvas{
+  width: 30.72917rem !important;
+  height: 22.65625rem !important;
+}
+.main  #charts3 {
+  width: 30.72917rem;
+  height: 22.1354rem;
+  margin: 0 auto;
+}
+.main #charts3 canvas{
+  width: 30.72917rem !important;
+  height: 22.1354rem !important;
+}
+.main  #charts4 {
+  width: 15.625rem;
+  height: 15.625rem;
+  margin: -1.34375rem auto;
+}
+.main  #charts4 canvas{
+  width: 15.625rem !important;
+  height: 15.625rem !important;
+}
+.main .item {
+  width: 38%;
+  display: inline-block;
+  height: 3.90625rem;
+  position: relative;
+  left: 3.6rem
+}
+.main .item_bottom{
+  width: 32%;
+  left: -1rem;
+  padding: 0;
+}
+.main .item img{
+  width: 2.60417rem;
+  height: 2.60417rem;
+  margin-left: 3.125rem;
+  margin-top: 1.5625rem;
+}
+.main .item span{
+  position: absolute;
+  top:1.30208rem;
+  left: 6.77083rem;
+  color: #abbcf0;
+  font-size: 0.9375rem;
+}
+.main .item_bottom span{
+  left: 6.2rem;
+  width: 9rem;
+}
+.main .item p{
+  position: absolute;
+  left: 6.77083rem;
+  top: 2.60417rem;
+  font-size: 1.5625rem;
+}
+.main table{
+  width: 100%;
+  padding: 0.72917rem;
+  text-align: left;
+  table-layout: fixed;
+  font-size: 0.83333rem;
+}
+.main table th{
+  color: #0c81fe;
+  font-size: 0.83333rem;
+  padding-bottom:1.0417rem;
+  border-bottom: 0.10417rem solid #1a3f72;
+}
+.main table th:nth-child(1) {
+  width: 9.89583rem;
+}
+.main table td {
+  height: 1.822917rem;
+  color: #abbcf0;
+}
+.main .tab1 table tr td {
+  text-align: center;
+}
+.main .tab1 table tr td:nth-child(1) {
+  text-align: left;
+}
+.main .tab1 table tr th {
+  text-align: center;
+}
+.main .tab1 table tr th:nth-child(1) {
+  text-align: left;
+}
+.main .tab1 table tr th:nth-child(1) {
+  width: 6.25rem;
+}
+.main .tab1 table tr th:nth-child(4) {
+  width: 6.25rem;
+}
+.main .tab1 table tr td:nth-child(1) {
+  width: 6.25rem;
+}
+.main .tab4 table td {
+  height: 4.0625rem;
+}
+.main .tab4 table {
+  height: 4.0625rem;
+  table-layout: fixed;
+}
+.main .tab4 table .name {
+  width: 8.333rem;
+}
+.main .tab4 table .ranking{
+  width: 0.88512rem;
+  height: 1.40625rem;
+}
+.main .tab4 table td .star img {
+  width: 1.0417rem;
+  height: 1.0417rem;
+}
+.main .tab4 table th:nth-child(1) {
+  width: 3.84512rem;
+}
+.main .tab4 table th:nth-child(2) {
+  width: 7.291667rem;
+}
+.main .tab4 table .star {
+  width: 7.291667rem !important;
+}
+.main .tab4 table .user {
+  width: 2.60417rem;
+  height: 2.60417rem;
+  margin-top: 0.72917rem;
+  margin-left: 0.52083rem;
+  border-radius: 50%;
+}
+.main .tab4 table .indent {
+  position: absolute;
+  left: 3.85471rem;
+  top: 1.35417rem;
+}
+.main .unit {
+  position: absolute;
+  font-size: 0.9375rem;
+  color: #44F0E9;
+  right: 2.6785rem;
+  top: 2.3437rem;
+}
+.main .tab1 .tableBox {
+  width:100%;
+  height:18.354rem;
+  overflow:hidden;
+  position: relative;
+}
+.main .tab1 .topTable {
+  position: absolute;
+  bottom:15.8rem;
+}

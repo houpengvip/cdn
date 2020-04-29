@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* 扫码 */
+body{background: #eee;}
+.sdMain{background: #eee;}
+.sdMain .headerBar{height: 42.8vw;width: 100%;background: #eafef4 bottom center no-repeat;background-size: 100%;position: relative;z-index: 9;}
+.sdMain .headerBar .infoBar{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);text-align: center;padding: 0 5px;}
+.sdMain .headerBar .infoBar .imgBar{display: inline-block;width: 25.5vw;height: 25.5vw;border-radius: 50%;position: relative;overflow: hidden;}
+.sdMain .headerBar .infoBar .imgBar img{display: block;max-height: 100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.sdMain .headerBar .infoBar p{color: #53af66;font-weight: bold;font-size: 4.8vw;line-height: 8vw;}
+.sdMain .headerBar  b{position: absolute;top: 40.2vw;height: 7.6vw;}
+.sdMain .headerBar  b.leftImg{left: 8.3vw;}
+.sdMain .headerBar  b.rightImg{right: 8.3vw;}
+.sdMain .headerBar  b img{display: block;height: 100%;}
+.sdMain .sdContentFloorMain{margin: 2.3vw 2.7vw 0;background: #fff;padding: 2.5vw;border-radius: 2vw;padding-top: 5vw;box-shadow: 0 0 10px 2px #ddd;}
+.sdMain ul.sdContentFloorMain li{font-size: 3.75vw;color: #000;display: flex;display: -webkit-flex;justify-content: space-between;line-height: 5vw;padding:2vw 0;overflow: hidden;}
+.sdMain ul.sdContentFloorMain li b{display: inline-block;height: 3.75vw;width: 3.75vw;margin-right: 1vw;}
+.sdMain ul.sdContentFloorMain li b img{display: block;width: 100%;}
+.sdMain ul.sdContentFloorMain li .floorL{}
+.sdMain ul.sdContentFloorMain li .floorR{color: #666;text-align: right;max-width: 66.25vw;}
+.sdMain .sdContentFloor .tit{color: #000;font-weight: bold;font-size: 4.5vw;margin-top: 5.6vw;padding: 0 2.7vw;line-height: 7.6vw;}
+.sdMain .sdContentFloor .tit b{display: inline-block;height: 7.6vw;width: 7.6vw;margin-right: 2vw;vertical-align: middle;}
+.sdMain .sdContentFloor .tit b img{display: block;height: 100%;}
+.sdMain ul.sdContentFloorMain li.mainTit{margin-top: -2.7vw;font-size: 4vw;font-weight: bold;}
+.sdMain ul.sdContentFloorMain li.borderB{border-bottom: 1px solid #dcddde ;}
+.fcGreen{color: #54b068 !important;}
+.sdMain .sdContentFloorMain .timeLine{overflow: hidden;position: relative;}
+.sdMain .sdContentFloorMain .timeLine .timeLineBar{overflow: hidden;position: relative;}
+.sdMain .sdContentFloorMain .timeLine .timeLineBar .bigT{line-height: 5vw;padding: 2vw 0;font-weight: bold;font-size: 4vw;}
+.sdMain .sdContentFloorMain .timeLine .timeLineBar .bigT b{display: inline-block;width: 4vw;height: 4vw;border-radius: 50%;background-color: #54b068;margin-right: 2vw;float: left;}
+.sdMain .sdContentFloorMain .timeLine .timeLineBar .process li{margin: 1vw 0;}
+.sdMain .sdContentFloorMain .timeLine .timeLineBar .process li p{font-size: 3.75vw;line-height: 5vw;position: relative;padding: 2vw 0 2vw 7vw;overflow: hidden;}
+.sdMain .sdContentFloorMain .timeLine .timeLineBar .process li p img{display: block;width: 24vw;height: 15vw;float: left;margin-left: 5.3vw;}
+.sdMain .sdContentFloorMain .timeLine .timeLineBar .process li p img:first-child{margin-left: 0;}
+.sdMain .sdContentFloorMain .timeLine .timeLineBar .process li p b{display: inline-block;width: 3.15vw;position: absolute;left: 1vw;margin: 1.35vw 0;}
+.sdMain .sdContentFloorMain .timeLine .timeLineBar .process li p b img{display: block;width: 100%;height: 2.3vw;}
+.sdMain .sdContentFloorMain .timeLine:before{content: '';display: block;width: 2px;background: #ebebeb;position: absolute;left: 1.9vw;height: 97%;top: 2vw;}
+.slideFloor{height: 51vw; position: relative;}
+.slideFloor .bd ul{height: 45vw;}
+.slideFloor .bd ul li{height: 45vw;}
+.slideFloor .bd ul li img{height: 100%;display: block;margin: 0 auto;max-width: 89.6vw;}
+.slideFloor .hd{height: 3vw;line-height: 3vw;overflow: hidden;text-align: center;position: absolute;bottom: 3vw;width: 89.6vw;font-size: 0;}
+.slideFloor .hd li{display: inline-block;margin: 0 1.2vw;height: 10px;width: 10px;border-radius: 50%;background: #c0f3d5;}
+.slideFloor .hd li.on{background: #54b167;}
+footer{margin: 4vw;}
+footer p{margin: 2vw 0;text-align: center;color: #666;}
+.backBtn{position: absolute;left: 1vw;top: 4vw;display: block;width: 7vw;height: 7vw;}
+.backBtn img{display: block;width: 100%;}
